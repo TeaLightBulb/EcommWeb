@@ -74,7 +74,49 @@
     font-family: 'Courier New', Courier, monospace;
     color: rgb(86, 89, 93);
 }
+.sidebar{
+    height: 600px;
+    width: 230px;
+    left: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: lavender;
+    
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgb(170, 231, 101,0.25);
+  
+}
 
+.sidebar{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    display: grid;
+    grid-column: span;
+    padding: 15px 0px 8px 15px;
+    border: 2px solid lavender;
+}
+
+.sidebar li{
+    border-bottom: 2px solid lavender;
+    padding-bottom: 13px;
+    font-size: 12px;
+}
+.sidebar li i{
+    opacity: 0;
+    transition: 0.7s;
+    margin-left: 10px;
+}
+
+.sidebar li:hover i{
+    opacity: 1;
+    rotate: 90deg;
+    margin-left: 15px;
+}
 
 
 
